@@ -8,7 +8,7 @@ import { getSortedPostsData, getStarWarsPerson } from "../lib/posts";
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
 
-  const starWarsPerson = await getStarWarsPerson(4);
+  const starWarsPerson = await getStarWarsPerson(3);
   console.log({ starWarsPerson, allPostsData });
   return {
     props: {
